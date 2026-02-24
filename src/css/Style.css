@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* design geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/img/tmplete_fundo_galaxia.jpg);
+    color: aliceblue;
+}
+/* design do cabeçalho */
+header{
+    margin: 10px;
+    background-color: rgba(240, 248, 255, 0.462);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+header >nav{
+    display: inherit;
+    justify-content: space-between;
+    padding: 10px;
+    
+    >a{
+        color: aliceblue;
+    }
+
+}
+nav >a:hover{
+    color: chartreuse;
+}
+/* design do conteudo principal */
+main{
+    background-color: rgba(240, 248, 255, 0.462);
+    backdrop-filter: blur(2px);
+    margin: 10px;padding: 10px;
+    text-align: center;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+#img{
+    background-color: brown;
+    width: 70px;
+    height: 70px;
+}
+/* design do rodapé */
+footer{
+    margin: 10px;
+}
