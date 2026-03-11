@@ -13,8 +13,8 @@
     <header>
         <h1 id="salut"></h1>
         <nav id="navHome">
-            <a href="src/cadastro.html" target="_blank">Pedir</a>
-            <a href="src/consulta.html" target="_blank">Cardapio</a>
+            <a class="btn" href="src/cadastro.html" target="_blank">Pedir</a>
+            <a  class="btn" href="src/consulta.html" target="_blank">Cardapio</a>
         </nav>
     </header>
     <hr>
@@ -23,15 +23,16 @@
         <article class="flex">
             <div>
                 <h3>Pratos e marmitas</h3>
-                <div id="pratos" style="margin: 5px;"></div>
+                <div id="pratos"></div>
             </div>
             <div>
                 <h3>Lanches</h3>
-                <div id="lanches" style="margin: 5px;"9></div>
+                <div id="lanches"></div>
             </div>
         </article>
-        <div>
             <h3>Bebidas</h3>
+            <!-- colocar como flexDirectionColumn, e não apenas flex para formatar ao adicionar mais itens na msm div-->
+            <div id="bebidas" class="flex"></div>
         </div>
     </main>
     <hr>

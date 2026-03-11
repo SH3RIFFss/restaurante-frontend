@@ -9,6 +9,12 @@ body{
     background-image: url(/img/tmplete_fundo_galaxia.jpg);
     color: aliceblue;
 }
+.btn{
+    font-size: 20px;
+    background-color: black;
+    padding: 7px;
+    border-radius: 50%;
+}
 /* design do cabeçalho */
 header{
     margin: 10px;
@@ -30,7 +36,8 @@ header >nav{
 
 }
 nav >a:hover{
-    color: chartreuse;
+    color: black;
+    background-color: aliceblue;
 }
 /* design do conteudo principal */
 main{
@@ -41,12 +48,16 @@ main{
 }
 .flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 #img{
-    background-color: brown;
+    background-color: white;
     width: 70px;
     height: 70px;
+    margin: 5px;
+    box-shadow: 5px 5px 5px #00000097;
+    border-color: black;
+    border-style: solid;
 }
 /* design do rodapé */
 footer{

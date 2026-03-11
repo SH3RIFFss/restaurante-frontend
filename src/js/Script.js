@@ -6,6 +6,22 @@ var pratos = [];
 // instanciação da lista de lanches 
 var lanches = [];
 // declaração de um produto(prato)
+var bebidas = [];
+// declaração de um produto(prato)
+const bebida1 = {
+    "nome": "coca-cola",
+    "valor": "6.49",
+    "tipo": "bebida",
+    "desc": "600 ml"
+}
+bebidas.push(bebida1) //adição do objeto à lista
+const bebida2 = {
+    "nome": "coca-cola",
+    "valor": "11.49",
+    "tipo": "bebida",
+    "desc": "1.5 l"
+}
+bebidas.push(bebida2) //adição do objeto à lista
 const prato1 = {
     "nome": "prato do dia",
     "valor": "20.49",
@@ -34,9 +50,9 @@ lanches.push(lanche1); //adição do objeto à lista
 pratos.forEach(i => {
     const pratosDiv = document.getElementById("pratos"); //container de criação do objeto
     const pratosOp = document.createElement("div"); //tipo de objeto e como sera criado
-    // html com os layoul do objeto e os seus dados
+    // html com os layoult do objeto e os seus dados
     pratosOp.innerHTML = `
-    <p id="img"></p>
+    <img id="img" src="../img/prato_img.webp" alt="prato">
     <div>
     <p>${i.nome} | ${i.valor}</p>
     <p>itens: </p>
@@ -53,7 +69,7 @@ lanches.forEach(i => {
     const lanchesDiv = document.getElementById("lanches");
     const lanchesOp = document.createElement("div");
     lanchesOp.innerHTML = `
-    <p id="img"  style="display: flex";></p>
+    <img id="img" src="../img/lanche_img.webp" alt="lanche">
     <div>
     <p>${i.nome} | ${i.valor}</p>
     <p>itens: </p>
@@ -62,5 +78,20 @@ lanches.forEach(i => {
 `;
     lanchesOp.style.display = "flex";
     lanchesDiv.appendChild(lanchesOp);
+})
+// iteração da lista de objeto(bebidas) para o documento html
+bebidas.forEach(i => {
+    const bebidaDiv = document.getElementById("bebidas");
+    const bebidasOp = document.createElement("div");
+    bebidasOp.innerHTML = `
+    <img id="img" src="../img/bebida_img.webp" alt="bebida">
+    <div>
+    <p>${i.nome} | ${i.valor}</p>
+    <br>
+    <p>${i.desc}</p>
+    </div>
+`;
+    bebidasOp.style.display = "flex";
+    bebidaDiv.appendChild(bebidasOp);
 })
 
